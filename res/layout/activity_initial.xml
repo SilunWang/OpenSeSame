@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingbg"
+    android:orientation="vertical" >
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="187dp"
+        android:layout_marginRight="14dp" />
+
+    <SeekBar
+        android:id="@+id/SeekBar01"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:id="@+id/resetQuestionButton"
+        android:layout_width="99dp"
+        android:layout_height="60dip"
+        android:layout_above="@+id/SeekBar01"
+        android:layout_alignRight="@+id/SeekBar01"
+        android:layout_marginBottom="28dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttonbg"
+        android:textColor="@color/darkgreen" />
+
+    <Button
+        android:id="@+id/restudyButton"
+        android:layout_width="99dp"
+        android:layout_height="60dip"
+        android:layout_above="@+id/resetQuestionButton"
+        android:layout_alignLeft="@+id/resetQuestionButton"
+        android:background="@drawable/buttonbg"
+        android:textColor="@color/darkgreen" />
+
+    <CheckBox
+        android:id="@+id/openLockingBox"
+        android:layout_width="99dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/restudyButton"
+        android:layout_alignLeft="@+id/restudyButton"
+        android:background="@drawable/mycheckbox"
+        android:button="@null" />
+
+</RelativeLayout>

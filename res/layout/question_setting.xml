@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/questionbg" >
+
+    <Spinner
+        android:id="@+id/questionSpinner"
+        android:layout_width="279dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/answerText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/spinner"
+        android:paddingLeft="3dip"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/answerText"
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/questionSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/textbg"
+        android:ems="10"
+        android:paddingLeft="3dip"
+        android:gravity="center"
+        android:textColor="@color/white" >
+		
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="84dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/answerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/check"
+        android:textColor="@color/darkgreen" />
+
+</RelativeLayout>

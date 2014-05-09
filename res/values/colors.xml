@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="transparent">#A000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="rice">#ffeb98</color>
+	<color name="darkgreen">#333c21</color>
+</resources>

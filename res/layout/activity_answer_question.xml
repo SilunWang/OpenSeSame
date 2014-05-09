@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/answerque" >
+
+    <Button
+        android:id="@+id/answer_unlock"
+        android:layout_width="82dp"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/check"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:editable="false"
+        android:background="@drawable/answerfield"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/anserfield"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_alignLeft="@+id/question"
+        android:layout_below="@+id/question"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/answerfield"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

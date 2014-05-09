@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opensesameapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".InitialActivity"
+            android:label="@string/title_activity_initial"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LockActivity"
+            android:label="@string/title_activity_lock"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".AnswerQuestionActivity"
+            android:label="@string/title_activity_answer_question"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Transparent2" >
+        </activity>
+        <activity
+            android:name=".WelcomingActivity"
+            android:label="欢迎界面" >
+        </activity>
+        <activity
+            android:name="zuoshu.lock.SampleShakingActivity"
+            android:label="采集摇动数据"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".SampleShakingActivities"
+            android:label="采集摇动数据"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".QuestionSettingActivity"
+            android:label="设置问题" >
+        </activity>
+
+        <service android:name=".LockService" >
+        </service>
+    </application>
+
+</manifest>
